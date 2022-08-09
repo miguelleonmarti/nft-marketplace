@@ -32,7 +32,6 @@ describe("NFT", function () {
       await githubToken.mint(owner.address);
       await githubToken.mint(owner.address);
       await githubToken.mint(owner.address);
-      console.log(await githubToken.totalSupply());
       expect(await githubToken.totalSupply()).to.equal(MAX_SUPPLY);
       expect(await githubToken.balanceOf(owner.address)).to.equal(MAX_SUPPLY);
     });

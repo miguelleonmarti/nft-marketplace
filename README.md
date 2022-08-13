@@ -1,13 +1,35 @@
-# Sample Hardhat Project
+# NFT Marketplace 🛒🎨
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Marketplace to sell & buy NFTs (ERC721).
 
-Try running some of the following tasks:
+## Build with
 
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+- Solidity
+- OpenZeppelin
+- Hardhat
+- Ethers
+- Chai
+
+## Getting started
+
+To get a local copy up and running follow these simple example steps.
+
+### Installation
+
+1. Clone the repo:
+
+```sh
+git clone https://github.com/miguelleonmarti/multi-sig-wallet.git
+```
+
+2. Install dependencies
+
+```sh
+npm install
+```
+
+3. Run the test
+
+```sh
+npm run test
 ```

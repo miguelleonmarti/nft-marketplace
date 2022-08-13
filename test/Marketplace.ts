@@ -15,16 +15,12 @@ describe("Marketplace", function () {
   async function deployNFT() {
     const [TOKEN_NAME, TOKEN_SYMBOL] = ["Github NFT", "GH"];
     const NFTContract = await ethers.getContractFactory("NFT");
-    const nftContract = await NFTContract.deploy(TOKEN_NAME, TOKEN_SYMBOL);
-    await nftContract.deployed();
-    return nftContract;
+    return await NFTContract.deploy(TOKEN_NAME, TOKEN_SYMBOL);
   }
 
   async function deployMarketplace() {
     const MarketplaceContract = await ethers.getContractFactory("Marketplace");
-    const marketplaceContract = await MarketplaceContract.deploy();
-    await marketplaceContract.deployed();
-    return marketplaceContract;
+    return await MarketplaceContract.deploy();
   }
 
   before(async () => {

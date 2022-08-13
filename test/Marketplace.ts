@@ -1,11 +1,13 @@
 import { expect } from "chai";
 import { ethers } from "hardhat";
+import { Marketplace, NFT } from "../typechain-types";
+import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 
 describe("Marketplace", function () {
-  let owner: any;
-  let otherAccounts: any[];
-  let nft: any;
-  let marketplace: any;
+  let owner: SignerWithAddress;
+  let otherAccounts: SignerWithAddress[];
+  let nft: NFT;
+  let marketplace: Marketplace;
   const tokenId = ethers.BigNumber.from(0);
   let listingId = ethers.BigNumber.from(1);
   const price = ethers.BigNumber.from(1000);
